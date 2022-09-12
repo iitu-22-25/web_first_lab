@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', serif;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(122, 255, 133);
+    box-shadow: 0 0 20px black;
+    z-index: 2;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    background: url("public/ripples-shimmering.gif") no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding-top: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: greenyellow;
+}
+
+.section::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.about_me {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about_me_image {
+    width: 150px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.text {
+    max-width: 500px;
+}
+.title {
+    text-align: start;
+}
+.list_element {
+    margin-top: 10px;
+}
+
+.career {
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.career_company {
+    display: grid;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.text > dl {
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+}
+
+.experience {
+
+}
+
+.footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: rgba(245, 245, 245, 0.51);
+    position: absolute;
+    justify-self: start;
+    align-self: end;
+}
